@@ -9,3 +9,6 @@ Immerse yourself in the realm of database management with **MongoDB**, craft rob
   <div>
     <img src="outline.jpg" with="400px">
   </div>
+
+  ## The Angular Frontend - Understanding the Basics
+  1. Getting User Input
