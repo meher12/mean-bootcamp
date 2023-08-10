@@ -1,27 +1,3 @@
-# MeanBootcamp
+#MEAN Bootcamp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.3.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Welcome to the MEAN Bootcamp! 🚀 Here, you'll find a comprehensive collection of resources and code examples designed to accelerate your mastery of the MEAN (MongoDB, Express.js, Angular, Node.js) stack. Whether you're a beginner eager to delve into full-stack development or an experienced programmer looking to enhance your skillset, our carefully crafted modules and hands-on projects will guide you through the intricacies of each technology. Dive into the world of database management with MongoDB, build robust server-side applications with Express.js and Node.js, and craft dynamic user interfaces using Angular. Join us on this immersive learning journey, where you'll gain the practical expertise needed to create modern, scalable web applications. Get ready to elevate your development prowess with the power of MEAN!
