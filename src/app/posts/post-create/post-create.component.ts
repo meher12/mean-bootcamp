@@ -9,14 +9,22 @@ export class PostCreateComponent implements OnInit {
 
   constructor() { }
 
-  newPost ='';
+  entredValue = '';
+  newPost ='NO CONTENT';
 
   ngOnInit(): void {
   }
 
+  //Getting User Input
+  /*
   onAddPost(postInput: HTMLTextAreaElement){
     console.log(postInput)
-    this.newPost = 'The user \'s post';
+    this.newPost = postInput.value;
+  }
+  */
+ // Getting User Input with ngModule
+  onAddPost(){
+    this.newPost = this.entredValue;
   }
 
 }

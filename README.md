@@ -12,3 +12,4 @@ Immerse yourself in the realm of database management with **MongoDB**, craft rob
 
   ## The Angular Frontend - Understanding the Basics
   1. Getting User Input
+  2. Getting User Input with ngModule
