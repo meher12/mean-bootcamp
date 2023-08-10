@@ -16,4 +16,5 @@ Immerse yourself in the realm of database management with **MongoDB**, craft rob
   3. Angular Material
      1. ``` ng add @angular/material ``` 
      2. Using MatInputModule, MatCardModule and MatButtonModule
+     3. Adding a Toolbar
   
