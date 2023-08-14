@@ -15,7 +15,8 @@ Immerse yourself in the realm of database management with **MongoDB**, craft rob
   2. Getting User Input with ngModule
   3. Angular Material
      1. ``` ng add @angular/material ``` 
-     2. Using MatInputModule, MatCardModule and MatButtonModule
+     2. Using ***MatInputModule, MatCardModule and MatButtonModule***
      3. Adding a Toolbar
      4. Post list with ***mat-expansion-panel***
+  4. Creating Posts with Event Binding ***(@Output(), @Input())*** and creating a Post Model``` ng g interface Post --type=model ```
   
