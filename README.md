@@ -19,4 +19,5 @@ Immerse yourself in the realm of database management with **MongoDB**, craft rob
      3. Adding a Toolbar
      4. Post list with ***mat-expansion-panel***
   4. Creating Posts with Event Binding ***(@Output(), @Input())*** and creating a Post Model``` ng g interface Post --type=model ```
+  5. Adding a form and handling messages errors
   
