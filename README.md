@@ -24,3 +24,7 @@ Immerse yourself in the realm of database management with **MongoDB**, craft rob
       1. ``` ng g s posts/post --skip-tests=true ``` to create a service PostService
       2. Calling Get Post using service: ***Observables, Observers and Subscription***
       3. Enhancing the form  
+## Adding NodeJS to our Project
+1. Adding the Node Backend and Express Framework
+   1. Create a ***backend folder*** and ***server.js***
+   2. ``` npm install --save express ``` and create ***app.js*** file (as a middleware) inside backend folder
