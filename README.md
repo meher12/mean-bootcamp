@@ -28,3 +28,8 @@ Immerse yourself in the realm of database management with **MongoDB**, craft rob
 1. Adding the Node Backend and Express Framework
    1. Create a ***backend folder*** and ***server.js***
    2. ``` npm install --save express ``` and create ***app.js*** file (as a middleware) inside backend folder
+   3. Improving the server:
+      1. Enhancing server.js
+      2. ``` npm install --save-dev nodemon ``` to automatically restarting the node application when file changes
+      3. Add ***"start:server": "nodemon server.js"*** to ***package.json***
+      4. Remove errors of nodemon by adding ``` const debug = require('debug')('node-angular'); ```
