@@ -39,3 +39,5 @@ Immerse yourself in the realm of database management with **MongoDB**, craft rob
    1. ```npm install --save body-parser```
    2. Create a post request
    3. Add addPost method in PostService
+## Working with MongoDB
+***MongoDB is a NoSQL Database which stores "Documents" in "Collections" (instead of "Records" in "Tables" as in SQl) Easily connected to Node/Express (NOT to Angular!) ***
