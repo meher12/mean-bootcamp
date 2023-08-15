@@ -34,3 +34,4 @@ Immerse yourself in the realm of database management with **MongoDB**, craft rob
       3. Add ***"start:server": "nodemon server.js"*** to ***package.json***
       4. Remove errors of nodemon by adding ``` const debug = require('debug')('node-angular'); ```
 2. Fetching Initial Posts: ``` http://localhost:3000/api/posts```
+3. Using ***Angular HTTP Client and CORS***
