@@ -38,4 +38,4 @@ Immerse yourself in the realm of database management with **MongoDB**, craft rob
 4. Adding the POST Backend Point:
    1. ```npm install --save body-parser```
    2. Create a post request
-   3. Add to method in PostService
+   3. Add addPost method in PostService
