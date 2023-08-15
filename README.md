@@ -22,5 +22,5 @@ Immerse yourself in the realm of database management with **MongoDB**, craft rob
   5. Adding a form and handling messages errors
   6. Get Posts from Post-Create to Post-List using ***service***
       1. ``` ng g s posts/post --skip-tests=true ``` to create a service PostService
-      2. Calling Get Post: ***Observables, Observers and Subscription***
-  
+      2. Calling Get Post using service: ***Observables, Observers and Subscription***
+      3. Enhancing the form  
