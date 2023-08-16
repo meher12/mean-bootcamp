@@ -7,7 +7,7 @@ Immerse yourself in the realm of database management with **MongoDB**, craft rob
 ## MEAN Stack Bootcamp Outline
 
   <div>
-    <img src="outline.jpg" with="400px">
+    <img src="outline.jpg" with="300px">
   </div>
 
   ## The Angular Frontend - Understanding the Basics
@@ -41,3 +41,8 @@ Immerse yourself in the realm of database management with **MongoDB**, craft rob
    3. Add addPost method in PostService
 ## Working with MongoDB
 ***MongoDB is a NoSQL Database which stores "Documents" in "Collections" (instead of "Records" in "Tables" as in SQl) Easily connected to Node/Express (NOT to Angular!)***
+
+  <div>
+    <img src="nosqlsql.jpg" with="300px">
+  </div>
+
