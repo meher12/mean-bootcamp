@@ -53,9 +53,11 @@ app.post("/api/posts", (req, res, next) => {
   });
   // to save post in mongodb database
   // console.log(post);
-  post.save();
-  res.status(201).json({
-    message: "Posts added succesfully!",
+  post.save().then(createdPost => {
+     res.status(201).json({
+     message: "Posts added succesfully!",
+     postId: createdPost._id
+    });
   });
 });
 

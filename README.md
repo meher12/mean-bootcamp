@@ -60,4 +60,4 @@ Immerse yourself in the realm of database management with **MongoDB**, craft rob
          * [CRUD operations](https://mongoosejs.com/docs/queries.html) 
 3. Transforming Response Data (for example to remove _ from id)  
 4. Deleting Documents and refresh data
-
+5. Adding Posts with an ID to solve probleme of ***id is null***
