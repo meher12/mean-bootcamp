@@ -31,7 +31,7 @@ Immerse yourself in the realm of database management with **MongoDB**, craft rob
    3. Improving the server:
       1. Enhancing server.js
       2. ``` npm install --save-dev nodemon ``` to automatically restarting the node application when file changes
-      3. Add ***"start:server": "nodemon server.js"*** to ***package.json***
+      3. Add ***"start:server": "nodemon server.js"*** in ***package.json*** (npm run start:server) to run server
       4. Remove errors of nodemon by adding ``` const debug = require('debug')('node-angular'); ```
 2. Fetching Initial Posts: ``` http://localhost:3000/api/posts```
 3. Using ***Angular HTTP Client and CORS***
@@ -48,4 +48,5 @@ Immerse yourself in the realm of database management with **MongoDB**, craft rob
 1. Setting Up MongoDB cluster by using [Free Sandbox](https://www.mongodb.com/atlas/database)
 2. Using Mongoose ```npm install mongoose --save ```
    1. Add Schemas and Models in post.js file
+   2. Creating a Post instance
 
