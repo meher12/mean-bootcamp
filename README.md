@@ -50,4 +50,10 @@ Immerse yourself in the realm of database management with **MongoDB**, craft rob
    1. Add Schemas and Models in post.js file
    2. Creating a Post instance
    3. Connect the Node Express App to MongoDB
+   4. Install MongoDB Shell ***mongosh*** to manage mongodb with [terminal](https://www.mongodb.com/docs/mongodb-shell/install/#procedure) 
+      1. Run your connection string in your command line by using this connection string in your application ```mongosh "mongodb+srv://cluster0.dca3xkg.mongodb.net/" --apiVersion 1 --username maher```
+      2. Write on terminal ```use node-angular``` get on outputting ***switched to db node-angular***
+      3. Command line to handle Mongodb:
+         * ```show collections``` 
+         * ```db.posts.find()```  
 
