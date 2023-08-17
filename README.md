@@ -56,6 +56,6 @@ Immerse yourself in the realm of database management with **MongoDB**, craft rob
       3. Command line to handle Mongodb:
          * ```show collections``` 
          * ```db.posts.find()```  
-      4. Fetching Data From a Database:
+   4. Fetching Data From a Database:
          * [CRUD operations](https://mongoosejs.com/docs/queries.html)     
 
