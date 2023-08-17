@@ -58,5 +58,6 @@ Immerse yourself in the realm of database management with **MongoDB**, craft rob
          * ```db.posts.find()```  
    5. Fetching Data From a Database:
          * [CRUD operations](https://mongoosejs.com/docs/queries.html) 
-3. Transforming Response Data (for example to remove _ from id)   
+3. Transforming Response Data (for example to remove _ from id)  
+4. Deleting Documents 
 

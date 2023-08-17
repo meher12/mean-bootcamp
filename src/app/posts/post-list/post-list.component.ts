@@ -34,6 +34,11 @@ constructor(public postService: PostService) { }
      });
   }
 
+  // Delete post
+  onDelete(postId: string){
+    this.postService.deletePostById(postId);
+  }
+
   ngOnDestroy(): void {
     this.postSub.unsubscribe();
   }
