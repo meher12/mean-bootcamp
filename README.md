@@ -41,8 +41,11 @@ Immerse yourself in the realm of database management with **MongoDB**, craft rob
    3. Add addPost method in PostService
 ## Working with MongoDB
 ***MongoDB is a NoSQL Database which stores "Documents" in "Collections" (instead of "Records" in "Tables" as in SQl) Easily connected to Node/Express (NOT to Angular!)***
+   <div>
+      <img src="nosqlsql.jpg" with="300px">
+   </div>
 
-  <div>
-    <img src="nosqlsql.jpg" with="300px">
-  </div>
+1. Setting Up MongoDB cluster by using [Free Sandbox](https://www.mongodb.com/atlas/database)
+2. Using Mongoose ```npm install mongoose --save ```
+   1. Add Schemas and Models in post.js file
 
