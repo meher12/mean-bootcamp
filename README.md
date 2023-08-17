@@ -49,4 +49,5 @@ Immerse yourself in the realm of database management with **MongoDB**, craft rob
 2. Using Mongoose ```npm install mongoose --save ```
    1. Add Schemas and Models in post.js file
    2. Creating a Post instance
+   3. Connect the Node Express App to MongoDB
 
