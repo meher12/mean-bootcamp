@@ -1,5 +1,5 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import {  FormControl, FormGroup, Validators } from '@angular/forms';
+import { NgForm } from '@angular/forms';
 import { ActivatedRoute, ParamMap } from '@angular/router';
 import { Post } from '../post.model';
 import { PostService } from '../post.service';
@@ -13,7 +13,6 @@ export class PostCreateComponent implements OnInit {
   newPost = 'NO CONTENT';
   updatePost: Post;
   isLoading = false;
-  form: FormGroup;
   private mode = 'create';
   private postId: string;
   
@@ -22,14 +21,7 @@ export class PostCreateComponent implements OnInit {
   constructor(public postService: PostService, public route: ActivatedRoute) {}
 
   ngOnInit(): void {
-    this.form = new FormGroup({
-      'title': new FormControl(null, {
-         validators: [Validators.required, Validators.minLength(3)]
-        }),
-        'content': new FormControl(null, {
-          validators: [Validators.required]
-         }),
-    });
+    // to get postId from url "edit/:postId"
     this.route.paramMap.subscribe((paramMap: ParamMap) => {
       if (paramMap.has('postId')) {
         this.mode = 'edit';
@@ -38,15 +30,7 @@ export class PostCreateComponent implements OnInit {
         this.postService.getPostById(this.postId)
          .subscribe(postData => {
           this.isLoading = false;
-           this.updatePost = {
-               id: postData._id,
-               title: postData.title,
-               content: postData.content
-              };
-              this.form.setValue({
-                     title: this.updatePost.title,
-                     content: this.updatePost.content
-                    });
+           this.updatePost = {id: postData._id, title: postData.title, content: postData.content}
          });
       } else {
         this.mode = 'create';
@@ -55,24 +39,35 @@ export class PostCreateComponent implements OnInit {
     });
   }
 
-
+  //Getting User Input
+  /*
+  onAddPost(postInput: HTMLTextAreaElement){
+    console.log(postInput)
+    this.newPost = postInput.value;
+  }
+  */
   // Getting User Input with ngModule
-  onSavePost() {
-    if (this.form.invalid) {
+  onSavePost(form: NgForm) {
+    
+    if (form.invalid) {
       return;
     }
- 
+    /* const post: Post = {
+      title: form.value.title,
+      content: form.value.content
+    };
+    this.postCreated.emit(post); */
     this.isLoading = true;
     if(this.mode === 'create'){
-       this.postService.addPost(this.form.value.title, this.form.value.content);
+       this.postService.addPost(form.value.title, form.value.content);
     } else {
          this.postService.updatePost(
            this.postId,
-           this.form.value.title,
-           this.form.value.content
+           form.value.title,
+           form.value.content
           );
     }
     // rest after send form
-    this.form.reset();
+    form.resetForm();
   }
 }
