@@ -1,13 +1,13 @@
 <!--Getting User Input -->
 <!--<textarea rows="6" [value]="newPost" #postInput></textarea>-->
 <mat-card>
-  <form (submit)="onAddPost(postForm)" #postForm="ngForm">
+  <form (submit)="onSavePost(postForm)" #postForm="ngForm">
     <mat-form-field>
       <input 
         matInput 
         type="text" 
         name="title" 
-        ngModel 
+        [ngModel]="updatePost?.title"
         required
         placeholder="Post Title"
         #title="ngModel"/>
@@ -18,7 +18,7 @@
         matInput 
         rows="4" 
         name="content" 
-        ngModel 
+        [ngModel]="updatePost?.content" 
         required
         placeholder="Post Content"
         #content="ngModel"></textarea>

@@ -1,5 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { ActivatedRoute, ParamMap } from '@angular/router';
 import { Post } from '../post.model';
 import { PostService } from '../post.service';
 
@@ -9,13 +10,30 @@ import { PostService } from '../post.service';
   styleUrls: ['./post-create.component.scss'],
 })
 export class PostCreateComponent implements OnInit {
-
-  newPost ='NO CONTENT';
+  newPost = 'NO CONTENT';
+  updatePost: Post;
+  private mode = 'create';
+  private postId: string;
+  
   //@Output() postCreated = new EventEmitter<Post>();
 
-  constructor(public postService: PostService) { }
+  constructor(public postService: PostService, public route: ActivatedRoute) {}
 
   ngOnInit(): void {
+    // to get postId from url "edit/:postId"
+    this.route.paramMap.subscribe((paramMap: ParamMap) => {
+      if (paramMap.has('postId')) {
+        this.mode = 'edit';
+        this.postId = paramMap.get('postId');
+        this.postService.getPostById(this.postId)
+         .subscribe(postData => {
+           this.updatePost = {id: postData._id, title: postData.title, content: postData.content}
+         });
+      } else {
+        this.mode = 'create';
+        this.postId = null;
+      }
+    });
   }
 
   //Getting User Input
@@ -25,9 +43,9 @@ export class PostCreateComponent implements OnInit {
     this.newPost = postInput.value;
   }
   */
- // Getting User Input with ngModule
-  onAddPost(form: NgForm){
-    if(form.invalid){
+  // Getting User Input with ngModule
+  onSavePost(form: NgForm) {
+    if (form.invalid) {
       return;
     }
     /* const post: Post = {
@@ -35,9 +53,16 @@ export class PostCreateComponent implements OnInit {
       content: form.value.content
     };
     this.postCreated.emit(post); */
-    this.postService.addPost(form.value.title, form.value.content);
+    if(this.mode === 'create'){
+       this.postService.addPost(form.value.title, form.value.content);
+    } else {
+         this.postService.updatePost(
+           this.postId,
+           form.value.title,
+           form.value.content
+          );
+    }
     // rest after send form
     form.resetForm();
   }
-
 }
