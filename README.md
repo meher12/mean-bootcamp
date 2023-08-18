@@ -70,4 +70,4 @@ Immerse yourself in the realm of database management with **MongoDB**, craft rob
 1. Adding the File Input Button
 2. Converting the Form from a Template Driven ***FormsModule*** to a Reactive Approach ***ReactiveFormsModule***
 3. Adding ***Image Controls*** to Store the Image and Adding an ***Image Preview***
-4. Mime-Type Validator ***the Image Validator***
+4. Mime-Type Validator ***the Image Validator*** stable code
