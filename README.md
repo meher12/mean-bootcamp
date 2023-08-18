@@ -64,3 +64,4 @@ Immerse yourself in the realm of database management with **MongoDB**, craft rob
 ## Enhancing the App
 1. Add Routing ```ng generate module app-routing --flat --module=app``` 
 2. Creating the ***Edit Post*** on the server
+3. Re-Organizing Backend ***Routes***
