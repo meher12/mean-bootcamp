@@ -63,4 +63,4 @@ Immerse yourself in the realm of database management with **MongoDB**, craft rob
 5. Adding Posts with an ID to solve probleme of ***id is null***
 ## Enhancing the App
 1. Add Routing ```ng generate module app-routing --flat --module=app``` 
-2. Creating the ***Edit Post***
+2. Creating the ***Edit Post*** on the server
