@@ -66,3 +66,5 @@ Immerse yourself in the realm of database management with **MongoDB**, craft rob
 2. Creating the ***Edit Post*** on the server
 3. Re-Organizing Backend ***Routes***
 4. Adding Loading Spinners (Material progress-spinner)
+## Adding Image Uploads to our App
+1. Adding the File Input Button
