@@ -26,28 +26,28 @@ Immerse yourself in the realm of database management with **MongoDB**, craft rob
 2. Getting User Input with ngModule
 3. Angular Material
    1. `ng add @angular/material`
-   2. Using **_MatInputModule, MatCardModule and MatButtonModule_**
+   2. Using **MatInputModule, MatCardModule and MatButtonModule**
    3. Adding a Toolbar
-   4. Post list with **_mat-expansion-panel_**
-4. Creating Posts with Event Binding **_(@Output(), @Input())_** and creating a Post Model`ng g interface Post --type=model`
+   4. Post list with **mat-expansion-panel**
+4. Creating Posts with Event Binding **(@Output(), @Input())** and creating a Post Model`ng g interface Post --type=model`
 5. Adding a form and handling messages errors
 6. Get Posts from Post-Create to Post-List using **_service_**
    1. `ng g s posts/post --skip-tests=true` to create a service PostService
-   2. Calling Get Post using service: **_Observables, Observers and Subscription_**
+   2. Calling Get Post using service: **Observables, Observers and Subscription**
    3. Enhancing the form
 
 ## Adding NodeJS to our Project
 
 1. Adding the Node Backend and Express Framework
-   1. Create a **_backend folder_** and **_server.js_**
-   2. `npm install --save express` and create **_app.js_** file (as a middleware) inside backend folder
+   1. Create a **backend folder** and **server.js**
+   2. `npm install --save express` and create **app.js** file (as a middleware) inside backend folder
    3. Improving the server:
       1. Enhancing server.js
       2. `npm install --save-dev nodemon` to automatically restarting the node application when file changes
-      3. Add **_"start:server": "nodemon server.js"_** in **_package.json_** (npm run start:server) to run server
+      3. Add **"start:server": "nodemon server.js"** in **package.json** (npm run start:server) to run server
       4. Remove errors of nodemon by adding `const debug = require('debug')('node-angular');`
 2. Fetching Initial Posts: ` http://localhost:3000/api/posts`
-3. Using **_Angular HTTP Client and CORS_**
+3. Using **Angular HTTP Client and CORS**
 4. Adding the POST Backend Point:
    1. `npm install --save body-parser`
    2. Create a post request
@@ -55,7 +55,7 @@ Immerse yourself in the realm of database management with **MongoDB**, craft rob
 
 ## Working with MongoDB
 
-**_MongoDB is a NoSQL Database which stores "Documents" in "Collections" (instead of "Records" in "Tables" as in SQl) Easily connected to Node/Express (NOT to Angular!)_**
+**MongoDB is a NoSQL Database which stores "Documents" in "Collections" (instead of "Records" in "Tables" as in SQl) Easily connected to Node/Express (NOT to Angular!)**
 
    <div>
       <table>
@@ -73,9 +73,9 @@ Immerse yourself in the realm of database management with **MongoDB**, craft rob
    1. Add Schemas and Models in post.js file
    2. Creating a Post instance
    3. Connect the Node Express App to MongoDB
-   4. Install MongoDB Shell **_mongosh_** to manage mongodb with [terminal](https://www.mongodb.com/docs/mongodb-shell/install/#procedure)
+   4. Install MongoDB Shell **mongosh** to manage mongodb with [terminal](https://www.mongodb.com/docs/mongodb-shell/install/#procedure)
       1. Run your connection string in your command line by using this connection string in your application `mongosh "mongodb+srv://cluster0.dca3xkg.mongodb.net/" --apiVersion 1 --username maher`
-      2. Write on terminal `use node-angular` get on outputting **_switched to db node-angular_**
+      2. Write on terminal `use node-angular` get on outputting **switched to db node-angular**
       3. Command line to handle Mongodb:
          - `show collections`
          - `db.posts.find()`
@@ -83,20 +83,22 @@ Immerse yourself in the realm of database management with **MongoDB**, craft rob
       - [CRUD operations](https://mongoosejs.com/docs/queries.html)
 3. Transforming Response Data (for example to remove \_ from id)
 4. Deleting Documents and refresh data
-5. Adding Posts with an ID to solve probleme of **_id is null_**
+5. Adding Posts with an ID to solve probleme of **_id is null**
 
 ## Enhancing the App
 
 1. Add Routing `ng generate module app-routing --flat --module=app`
-2. Creating the **_Edit Post_** on the server
-3. Re-Organizing Backend **_Routes_**
+2. Creating the **Edit Post** on the server
+3. Re-Organizing Backend **Routes**
 4. Adding Loading Spinners (Material progress-spinner)
 
 ## Adding Image Uploads to our App
 
 1. Adding the File Input Button
-2. Converting the Form from a Template Driven **_FormsModule_** to a Reactive Approach **_ReactiveFormsModule_**
-3. Adding **_Image Controls_** to Store the Image and Adding an **_Image Preview_**
-4. Mime-Type Validator **_the Image Validator_** stable code
+2. Converting the Form from a Template Driven **FormsModule** to a Reactive Approach **_ReactiveFormsModule_**
+3. Adding **Image Controls** to Store the Image and Adding an **Image Preview**
+4. Mime-Type Validator **the Image Validator** stable code
 5. Adding Server Side And ***Uploading File***
-   1. [multer](https://github.com/expressjs/multer) ```npm install --save multer```
+   * [multer](https://github.com/expressjs/multer) ```npm install --save multer```
+6. Working with the File URL ***add image path to db***
+
