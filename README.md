@@ -101,4 +101,4 @@ Immerse yourself in the realm of database management with **MongoDB**, craft rob
 5. Adding Server Side And ***Uploading File***
    * [multer](https://github.com/expressjs/multer) ```npm install --save multer```
 6. Working with the File URL ***add image path to db***
-
+7. Adding Images on the Frontend
