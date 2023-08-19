@@ -95,7 +95,7 @@ Immerse yourself in the realm of database management with **MongoDB**, craft rob
 ## Adding Image Uploads to our App
 
 1. Adding the File Input Button
-2. Converting the Form from a Template Driven **FormsModule** to a Reactive Approach **_ReactiveFormsModule_**
+2. Converting the Form from a Template Driven **FormsModule** to a Reactive Approach **ReactiveFormsModule**
 3. Adding **Image Controls** to Store the Image and Adding an **Image Preview**
 4. Mime-Type Validator **the Image Validator** stable code
 5. Adding Server Side And ***Uploading File***
@@ -103,3 +103,6 @@ Immerse yourself in the realm of database management with **MongoDB**, craft rob
 6. Working with the File URL ***add image path to db***
 7. Adding Images on the Frontend
 8. Updating Posts with Images
+
+## Adding Pagination
+* Working on the Pagination Backend and Connecting the Angular Paginator to the Backend
