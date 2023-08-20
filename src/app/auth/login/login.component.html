@@ -28,6 +28,7 @@
         >
       </mat-form-field>
       <br />
-      <button color="accent" mat-raised-button type="submit">Login</button>
+      <button color="accent" mat-raised-button type="submit" *ngIf="!isLoading">Login</button>
+      <mat-spinner *ngIf="isLoading"></mat-spinner>
     </form>
   </mat-card>
