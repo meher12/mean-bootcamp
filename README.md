@@ -106,3 +106,6 @@ Immerse yourself in the realm of database management with **MongoDB**, craft rob
 
 ## Adding Pagination
 * Working on the Pagination Backend and Connecting the Angular Paginator to the Backend
+
+## Adding User Authentication
+1. Adding the Login Component
