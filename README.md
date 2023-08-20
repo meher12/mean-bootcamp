@@ -110,3 +110,6 @@ Immerse yourself in the realm of database management with **MongoDB**, craft rob
 ## Adding User Authentication
 1. Adding the Login Component
 2. Adding the Signup Component
+3. Create the ***User Model***:
+   * ```npm install --save mongoose-unique-validator```
+   ***mongoose-unique-validator is a plugin which adds pre-save validation for unique fields within a Mongoose schema.***
