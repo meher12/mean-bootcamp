@@ -48,7 +48,7 @@ app.use((req, res, next) => {
 });
 
 app.use("/api/posts", postsRoutes);
-app.use("api/user", userRoutes);
+app.use("/api/user", userRoutes);
 
 // add app as module to use it in server.js
 module.exports = app;

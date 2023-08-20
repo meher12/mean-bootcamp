@@ -31,7 +31,7 @@ Immerse yourself in the realm of database management with **MongoDB**, craft rob
    4. Post list with **mat-expansion-panel**
 4. Creating Posts with Event Binding **(@Output(), @Input())** and creating a Post Model`ng g interface Post --type=model`
 5. Adding a form and handling messages errors
-6. Get Posts from Post-Create to Post-List using **_service_**
+6. Get Posts from Post-Create to Post-List using **service**
    1. `ng g s posts/post --skip-tests=true` to create a service PostService
    2. Calling Get Post using service: **Observables, Observers and Subscription**
    3. Enhancing the form
@@ -113,3 +113,5 @@ Immerse yourself in the realm of database management with **MongoDB**, craft rob
 3. Create the ***User Model***:
    * ```npm install --save mongoose-unique-validator```
    ***mongoose-unique-validator is a plugin which adds pre-save validation for unique fields within a Mongoose schema.***
+4. Creating a ***New User*** and Connecting Frontend (Angular) to the Backend using the ***Service***:
+   * ```npm install  --save bcrypt``` ***A library to help you hash passwords***
