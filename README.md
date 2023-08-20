@@ -109,3 +109,4 @@ Immerse yourself in the realm of database management with **MongoDB**, craft rob
 
 ## Adding User Authentication
 1. Adding the Login Component
+2. Adding the Signup Component
