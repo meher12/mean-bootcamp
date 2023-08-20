@@ -132,3 +132,4 @@ Immerse yourself in the realm of database management with **MongoDB**, craft rob
    3. Connecting the ***Logout Button*** to the Authentication Status
 7. Redirecting Users
 8. Adding ***Route Guards*** to protect UrlTree 
+9. The ***Token Expiration*** timer in the UI

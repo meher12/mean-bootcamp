@@ -55,7 +55,10 @@ router.post("/login", (req, res, next) => {
         { expiresIn: "1h" }
       );
       // Sending the token to the Frontend
-      res.status(200).json({ token: token });
+      res.status(200).json({
+        token: token,
+        expiresIn: 3600
+      });
     })
     .catch((err) => {
       console.log(err);
