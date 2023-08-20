@@ -115,3 +115,13 @@ Immerse yourself in the realm of database management with **MongoDB**, craft rob
    ***mongoose-unique-validator is a plugin which adds pre-save validation for unique fields within a Mongoose schema.***
 4. Creating a ***New User*** and Connecting Frontend (Angular) to the Backend using the ***Service***:
    * ```npm install  --save bcrypt``` ***A library to help you hash passwords***
+5. Implement the SPA (Single Page Application) Authentication in ***login method*** using JWT:
+   <p>
+   Authentication in a single page application (SPA) involves implementing mechanisms, like token-based authentication or OAuth, to verify and manage user identities securely within the application's front-end while interacting with back-end services for validation. 
+   </p> 
+   <div>
+     <img src="spaauthe.jpg" width="350px">
+   </div>
+   1. ```npm install --save jsonwebtoken```
+   2. Working in Fronted and Backend
+   
