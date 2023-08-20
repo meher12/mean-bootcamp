@@ -126,6 +126,7 @@ Immerse yourself in the realm of database management with **MongoDB**, craft rob
    1. ```npm install --save jsonwebtoken```
    <br>
    2. Working in Fronted and Backend
-6. Authenticate Requests (get token)
+6. Authenticate Requests ***Get token**
    1. Adding Middleware and the Token to Authenticate Requests
    2. Improving the UI Header and message to Reflect the Authentication Status
+   3. Connecting the ***Logout Button*** to the Authentication Status
