@@ -42,7 +42,7 @@ router.post(
       title: req.body.title,
       content: req.body.content,
       imagePath: url + "/images/" + req.file.filename,
-      creator: req.userData.userId,
+      creator: req.userData.userId
     });
     console.log(req.userData);
     // to save post in mongodb database
@@ -75,6 +75,7 @@ router.put(
       title: req.body.title,
       content: req.body.content,
       imagePath: imagePath,
+      creator: req.userData.userId
     });
     Post.updateOne(
       { _id: req.params.id, creator: req.userData.userId },

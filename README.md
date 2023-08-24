@@ -138,3 +138,4 @@ Immerse yourself in the realm of database management with **MongoDB**, craft rob
 ## Authorization
    1. Adding a Reference to the Model and the User ID to Posts.
    2. Protecting Resources with Authorization (***If the person is not the owner of the post, the update or deletion will not be validated due to lack of authorization***).
+   3. Using the User ID on the Frontend 
