@@ -42,7 +42,7 @@ router.post(
       title: req.body.title,
       content: req.body.content,
       imagePath: url + "/images/" + req.file.filename,
-      creator: req.userData.userId
+      creator: req.userData.userId,
     });
     console.log(req.userData);
     // to save post in mongodb database
@@ -76,10 +76,17 @@ router.put(
       content: req.body.content,
       imagePath: imagePath,
     });
-    console.log(post);
-    Post.updateOne({ _id: req.params.id }, post).then((result) => {
+    Post.updateOne(
+      { _id: req.params.id, creator: req.userData.userId },
+      post
+    ).then((result) => {
       console.log(result);
-      res.status(200).json({ message: "Update successful!" });
+      // modifiedCount is a field in result object
+      if (result.modifiedCount > 0) {
+        res.status(200).json({ message: "Update successful!" });
+      } else {
+        res.status(401).json({ message: "Not authorized!" });
+      }
     });
   }
 );
@@ -121,10 +128,16 @@ router.get("/:id", (req, res, next) => {
 // Deleting documents
 router.delete("/:id", checkAuth, (req, res, next) => {
   console.log(req.params.id);
-  Post.deleteOne({ _id: req.params.id }).then((result) => {
-    console.log(result);
-    res.status(200).json({ message: "Post delete" });
-  });
+  Post.deleteOne({ _id: req.params.id, creator: req.userData.userId }).then(
+    result => {
+      console.log(result);
+      if (result.deletedCount > 0) {
+        res.status(200).json({ message: "Deletion successful!" });
+      } else {
+        res.status(401).json({ message: "Not authorized!" });
+      }
+    }
+  );
 });
 
 module.exports = router;
