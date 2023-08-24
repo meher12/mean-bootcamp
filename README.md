@@ -134,3 +134,6 @@ Immerse yourself in the realm of database management with **MongoDB**, craft rob
 8. Adding ***Route Guards*** to protect UrlTree 
 9. The ***Token Expiration*** timer in the UI
 10. Saving the Token ***in the Local Storage***
+
+## Authorization
+   1. Adding a Reference to the Model and the User ID to Posts.

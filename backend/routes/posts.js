@@ -42,7 +42,9 @@ router.post(
       title: req.body.title,
       content: req.body.content,
       imagePath: url + "/images/" + req.file.filename,
+      creator: req.userData.userId
     });
+    console.log(req.userData);
     // to save post in mongodb database
     // console.log(post);
     post.save().then((createdPost) => {
