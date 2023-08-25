@@ -144,3 +144,4 @@ Immerse yourself in the realm of database management with **MongoDB**, craft rob
    1. Testing Different Places to Handle Errors
    2. The Error Interceptor
    3. Adding an Error Dialog
+   4. Returning Error Messages on the Server
