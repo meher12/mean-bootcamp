@@ -142,3 +142,4 @@ Immerse yourself in the realm of database management with **MongoDB**, craft rob
 
    ## Handling Errors
    1. Testing Different Places to Handle Errors
+   2. The Error Interceptor
