@@ -148,9 +148,10 @@ Immerse yourself in the realm of database management with **MongoDB**, craft rob
 
 ## Optimizations
    1. Using Controllers
-   2. Separating the Middleware
+   2. Separating the Middleware to edit post solve this error (result.modifiedCount > 0)
    3. Creating an Angular Material ***Module***
    4. Creating the ***Post Module***
    5. Creating the ***Auth Module***
    6. Adding ***Lazy Loading*** for Auth
       * ```ng generate module auth/auth-routing --flat --module=auth```
+   7. Using a Global Angular Config ***environments***
