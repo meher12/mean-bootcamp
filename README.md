@@ -150,4 +150,5 @@ Immerse yourself in the realm of database management with **MongoDB**, craft rob
    1. Using Controllers
    2. Separating the Middleware
    3. Creating an Angular Material ***Module***
-   4. Creating a ***Post Module***
+   4. Creating the ***Post Module***
+   5. Creating the ***Auth Module***

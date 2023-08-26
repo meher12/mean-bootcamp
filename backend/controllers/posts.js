@@ -43,11 +43,12 @@ exports.updatePost = (req, res, next) => {
     imagePath: imagePath,
     creator: req.userData.userId,
   });
+  console.log(post);
   Post.updateOne({ _id: req.params.id, creator: req.userData.userId }, post)
     .then((result) => {
       console.log(result);
       // modifiedCount is a field in result object
-      if (result.modifiedCount > 0) {
+      if (result.modifiedCount > 0 ) {
         res.status(200).json({ message: "Update successful!" });
       } else {
         res.status(401).json({ message: "Not authorized!" });
