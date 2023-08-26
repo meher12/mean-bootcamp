@@ -140,15 +140,17 @@ Immerse yourself in the realm of database management with **MongoDB**, craft rob
    2. Protecting Resources with Authorization (***If the person is not the owner of the post, the update or deletion will not be validated due to lack of authorization***).
    3. Using the User ID on the Frontend 
 
-   ## Handling Errors
+## Handling Errors
    1. Testing Different Places to Handle Errors
    2. The Error Interceptor
    3. Adding an Error Dialog
    4. Returning Error Messages on the Server
 
-   ## Optimizations
+## Optimizations
    1. Using Controllers
    2. Separating the Middleware
    3. Creating an Angular Material ***Module***
    4. Creating the ***Post Module***
    5. Creating the ***Auth Module***
+   6. Adding ***Lazy Loading*** for Auth
+      * ```ng generate module auth/auth-routing --flat --module=auth```
