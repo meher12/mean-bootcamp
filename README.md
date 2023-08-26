@@ -149,3 +149,4 @@ Immerse yourself in the realm of database management with **MongoDB**, craft rob
    ## Optimizations
    1. Using Controllers
    2. Separating the Middleware
+   3. Creating an Angular Material ***Module***
