@@ -45,7 +45,7 @@ exports.userLogin = (req, res, next) => {
       // Implement the JWT
       const token = jwt.sign(
         { email: fetchedUser.email, userId: fetchedUser._id },
-        "secret_this_should_be_longer",
+        process.env.JWT_KEY,
         { expiresIn: "1h" }
       );
       // Sending the token to the Frontend

@@ -155,3 +155,4 @@ Immerse yourself in the realm of database management with **MongoDB**, craft rob
    6. Adding ***Lazy Loading*** for Auth
       * ```ng generate module auth/auth-routing --flat --module=auth```
    7. Using a Global Angular Config ***environments***
+   8. ***Using Node Environment Variables***
